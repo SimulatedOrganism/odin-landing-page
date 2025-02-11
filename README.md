@@ -1,8 +1,13 @@
 # odin-landing-page
 ## Assignment
 * Create an entire web page from a design coming from 2 images: 
+<<<<<<< HEAD
   - [Landing page design](./images/top-landing-page-design.png)
   - [Landing page colors and fonts](./images/top-landing-page-colors-fonts.png)
+=======
+  -[Landing page design](./images/top-landing-page-design.png)
+  -[Landing page colors and fonts](./images/top-landing-page-colors-fonts.png)
+>>>>>>> 122f488371c87484802348d43b73fab66409d8c2
 - Create something from scratch while getting various elements in more or less the right position relative to the rest
 - Credit the creators of the images in this project
 - \[optional\] Substitute one's own content into this design 
