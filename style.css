@@ -1,42 +1,71 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: Roboto;
 }
 
-.page, .hero, .header, .links {
+body, .hero, .header, .links, .hero > .container, .text {
   display: flex;
 }
 
-.page, .hero {
+.text {
+  flex-wrap: wrap;
+}
+
+body > *, .hero > .container {
+  flex: auto;
+}
+
+.hero > .container {
+  justify-content: space-between;
+  align-items: center;
+}
+
+body, .hero {
   flex-direction: column;
 }
 
 .header {
-  justify-content: space-between;
-}
-
-.hero {
-  padding: 16px 45px;
-  background-color: #1F2937;
-}
-
-.page > * {
   
 }
 
-.hero-container .main {
+.header, .hero > .container {
+  justify-content: space-between;
+}
+
+.hero, .footer {
+  background-color: #1F2937;
+}
+
+.header, .text, .image {
+  padding-bottom: 75px;
+}
+
+.image {
+  padding: 75px;
+}
+
+.header, .hero > .container {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.hero > .container .main {
   font-size: 48px;
   font-weight: 900;
 }
 
-.hero-container .main, .logo {
+.hero > .container .main, .logo {
   color: #F9FAF8;
 }
 
-.hero-container .secondary, .header a {
+.hero > .container .secondary, .header a {
   font-size: 18px;
   color: #E5E7EB;
+}
+
+.header a {
   text-decoration: none;
 }
 
@@ -52,5 +81,44 @@
 }
 
 button {
+  color: white;
+  background-color: #3882F6;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.text, .image {
+  flex: 1;
+  align-self: stretch;
+  gap: 5px;
+}
+
+.hero .container .image {
+  background-color: grey;
+}
+
+.information .header, .quote .text {
+  font-size: 36px;
+  color: #1F2937;
+}
+
+.information .header {
+  font-weight: 900;
+}
+
+.information .image {
+  border: 5px solid #3882F6;
+}
+
+.quote {
+  background-color: #E5E7EB;
+}
+
+.quote .text {
+  font-weight: light italic;
+}
+
+.cta .container {
   background-color: #3882F6;
 }
