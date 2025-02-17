@@ -5,50 +5,30 @@
   font-family: Roboto;
 }
 
-body, .hero, .header, .links, .hero > .container, .text {
+body, .hero, .header, .links, .hero > .container, .hero .text, .hero .container .image  {
   display: flex;
 }
 
-.text {
-  flex-wrap: wrap;
-}
-
-body > *, .hero > .container {
-  flex: auto;
+.hero {
+  padding: 15px 180px 105px;
+  gap: 75px;
 }
 
 .hero > .container {
   justify-content: space-between;
-  align-items: center;
+  gap: 75px;
 }
 
-body, .hero {
+body, .hero, .text {
   flex-direction: column;
 }
 
 .header {
-  
-}
-
-.header, .hero > .container {
   justify-content: space-between;
 }
 
 .hero, .footer {
   background-color: #1F2937;
-}
-
-.header, .text, .image {
-  padding-bottom: 75px;
-}
-
-.image {
-  padding: 75px;
-}
-
-.header, .hero > .container {
-  padding-left: 75px;
-  padding-right: 75px;
 }
 
 .hero > .container .main {
@@ -81,21 +61,29 @@ body, .hero {
 }
 
 button {
+  align-self: flex-start;
   color: white;
   background-color: #3882F6;
-  padding: 5px 20px;
+  font-size: 18px;
+  font-weight: 900;
+  padding: 5px 30px;
   border: none;
   border-radius: 5px;
 }
 
-.text, .image {
-  flex: 1;
-  align-self: stretch;
-  gap: 5px;
+.hero .text {
+  width: 496px;
+  gap: 10px;
 }
 
 .hero .container .image {
+  flex: none;
+  align-self: stretch;
+  color: white;
   background-color: grey;
+  justify-content: center;
+  align-items: center;
+  width: 460px;
 }
 
 .information .header, .quote .text {
