@@ -5,13 +5,18 @@
   font-family: Roboto;
 }
 
-body, .hero, .header, .links, .hero > .container, .hero .text, .hero .container .image  {
+body, .hero, .header, .links, .hero > .container, .hero .text, .hero .container .image, .information, .information > .images, .information > .images > .container, .information .subtext {
   display: flex;
 }
 
-.hero {
+.hero, .information {
   padding: 15px 180px 105px;
   gap: 75px;
+}
+
+.information {
+  padding-top: 40px;
+  gap: 40px;
 }
 
 .hero > .container {
@@ -19,7 +24,7 @@ body, .hero, .header, .links, .hero > .container, .hero .text, .hero .container 
   gap: 75px;
 }
 
-body, .hero, .text {
+body, .hero, .text, .information, .information > .images > .container {
   flex-direction: column;
 }
 
@@ -86,9 +91,21 @@ button {
   width: 460px;
 }
 
+.information, .information .container {
+  align-items: center;
+}
+
 .information .header, .quote .text {
   font-size: 36px;
   color: #1F2937;
+}
+
+.information > .images {
+  gap: 75px;
+}
+
+.information > .images > .container {
+  width: 150px;
 }
 
 .information .header {
@@ -96,7 +113,10 @@ button {
 }
 
 .information .image {
+  width: 150px;
+  height: 150px;
   border: 5px solid #3882F6;
+  border-radius: 15px;
 }
 
 .quote {
