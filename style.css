@@ -9,24 +9,18 @@
 
 .information {
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 50px;
   padding: 50px;
 }
 
 .information .header {
+  width: 100%;
   font-size: 36px;
   color: #1F2937;
   font-weight: 900;
   text-align: center;
-}
-
-.information > .images {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 50px;
 }
 
 .information .container {
