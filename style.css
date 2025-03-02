@@ -7,26 +7,15 @@
   padding: 0;
 }
 
-body {
-  display: flex;
-}
-
-body {
-  flex-direction: column;
-}
-
 .information {
-  align-self: center;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   flex-direction: column;
   gap: 50px;
   padding: 50px;
 }
 
 .information .header {
-  flex-grow: none;
-  align-self: center;
   font-size: 36px;
   color: #1F2937;
   font-weight: 900;
@@ -34,8 +23,8 @@ body {
 }
 
 .information > .images {
-  align-self: center;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 50px;
 }
