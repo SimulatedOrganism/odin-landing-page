@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,128 +7,58 @@
   font-family: Roboto;
 }
 
-body, .hero, .header, .links, .hero > .container, .hero .text, .hero .container .image, .information, .information > .images, .information > .images > .container, .information .subtext {
+.cta {
+  color: white;
+  padding: 90px 180px;
+}
+
+.cta .container { 
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  min-width: fit-content;
+  background-color: #3882F6;
+  border-radius: 10px;
+  padding: 50px;
 }
 
-.hero, .information {
-  padding: 15px 180px 105px;
-  gap: 75px;
+.cta .main {
+  font-size: 22px;
+  font-weight: 600;
 }
 
-.information {
-  padding-top: 40px;
-  gap: 40px;
+.cta .secondary {
+  font-weight: 300;
 }
 
-.hero > .container {
-  justify-content: space-between;
-  gap: 75px;
-}
-
-body, .hero, .text, .information, .information > .images > .container {
-  flex-direction: column;
-}
-
-.header {
-  justify-content: space-between;
-}
-
-.hero, .footer {
-  background-color: #1F2937;
-}
-
-.hero > .container .main {
-  font-size: 48px;
-  font-weight: 900;
-}
-
-.hero > .container .main, .logo {
-  color: #F9FAF8;
-}
-
-.hero > .container .secondary, .header a {
-  font-size: 18px;
-  color: #E5E7EB;
-}
-
-.header a {
-  text-decoration: none;
-}
-
-.links {
-  gap: 16px;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.logo {
-  font-size: 24px;
-}
-
-button {
-  align-self: flex-start;
+.cta button {
+  align-self: center;
+  min-width: max-content;
+  height: min-content;
+  font-size: 15px;
+  font-weight: bold;
   color: white;
   background-color: #3882F6;
-  font-size: 18px;
-  font-weight: 900;
-  padding: 5px 30px;
-  border: none;
-  border-radius: 5px;
+  padding: 6px 30px;
+  border: 2px solid #E5E7EB;
+  border-radius: 10px;
 }
 
-.hero .text {
-  width: 496px;
-  gap: 10px;
+@media screen and (max-width: 1053px) {
+  .cta {
+    padding: 20px;
+    gap: 20px;
+  }
 }
 
-.hero .container .image {
-  flex: none;
-  align-self: stretch;
-  color: white;
-  background-color: grey;
-  justify-content: center;
-  align-items: center;
-  width: 460px;
-}
+@media screen and (max-width: 716px) {
+  * {
+    text-align: center;
+  }
 
-.information, .information .container {
-  align-items: center;
-}
-
-.information .header, .quote .text {
-  font-size: 36px;
-  color: #1F2937;
-}
-
-.information > .images {
-  gap: 75px;
-}
-
-.information > .images > .container {
-  width: 150px;
-}
-
-.information .header {
-  font-weight: 900;
-}
-
-.information .image {
-  width: 150px;
-  height: 150px;
-  border: 5px solid #3882F6;
-  border-radius: 15px;
-}
-
-.quote {
-  background-color: #E5E7EB;
-}
-
-.quote .text {
-  font-weight: light italic;
-}
-
-.cta .container {
-  background-color: #3882F6;
+  .cta .container {
+    padding: 20px 50px;
+  }
 }
