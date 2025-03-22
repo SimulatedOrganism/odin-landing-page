@@ -7,6 +7,27 @@
   font-family: Roboto;
 }
 
+.quote {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #E5E7EB;
+  padding: 80px 300px;
+}
+
+.quote .text {
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  color: #1F2937;
+}
+
+.quote .author {
+  align-self: flex-end;
+  font-size: 22px;
+  font-weight: 700;
+}
+
 .cta {
   color: white;
   padding: 90px 180px;
@@ -61,4 +82,8 @@
   .cta .container {
     padding: 20px 50px;
   }
+}
+
+.footer {
+  background-color: #1F2937;
 }
